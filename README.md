@@ -12,15 +12,17 @@ npm i -D @hypernym/prettier-config
 
 ## Usage
 
-**Simple**
+### Simple
 
-```json
+```js
+// package.json
+
 {
   "prettier": "@hypernym/prettier-config"
 }
 ```
 
-**Custom**
+### Custom
 
 ```js
 // prettier.config.cjs
@@ -28,7 +30,20 @@ npm i -D @hypernym/prettier-config
 module.exports = {
   ...require('@hypernym/prettier-config')
 
-  // custom rules...
+  // custom options...
+}
+```
+
+### Types
+
+```js
+// prettier.config.cjs
+
+/** @type {import('@hypernym/prettier-config').Config} */
+module.exports = {
+  ...require('@hypernym/prettier-config')
+
+  // custom options...
 }
 ```
 
