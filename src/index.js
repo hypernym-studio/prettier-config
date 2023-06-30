@@ -1,4 +1,4 @@
-/** @type {import('../src/index').Config} */
+/** @type {import('./index').Config} */
 module.exports = {
   arrowParens: 'avoid',
   semi: false,
