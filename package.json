@@ -2,31 +2,43 @@
   "name": "@hypernym/prettier-config",
   "version": "1.0.1",
   "author": "Hypernym Studio",
-  "description": "Hypernym Prettier config.",
+  "description": "Hypernym's internal config for Prettier.",
   "license": "MIT",
   "repository": "hypernym-studio/prettier-config",
   "homepage": "https://github.com/hypernym-studio/prettier-config",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
+  "funding": "https://github.com/sponsors/ivodolenc",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
   "files": [
-    "src"
+    "dist"
   ],
   "keywords": [
     "prettier",
     "prettier-config",
-    "config"
+    "presets",
+    "config",
+    "esm"
   ],
   "scripts": {
-    "format": "prettier --write ."
+    "build": "rolli",
+    "bump": "bummp",
+    "format": "prettier --config src/index.js --write .",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
-    "prettier": ">=2.8.3"
+    "prettier": ">=3.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "bummp": "^0.2.0",
+    "prettier": "^3.0.3",
+    "rolli": "^0.6.0"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "prettier": "./src/index.js"
+  "engines": {
+    "node": ">=v18.0.0"
+  }
 }
