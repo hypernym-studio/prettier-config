@@ -1,10 +1,8 @@
-# Prettier Config
+# @hypernym/prettier-config
 
-Hypernym Prettier config.
+Hypernym's internal config for Prettier.
 
 <sub><a href="https://github.com/hypernym-studio/prettier-config">Repository</a> | <a href="https://www.npmjs.com/package/@hypernym/prettier-config">Package</a> | <a href="https://github.com/hypernym-studio/prettier-config/releases">Releases</a> | <a href="https://github.com/hypernym-studio/prettier-config/discussions">Discussions</a></sub>
-
-## Installation
 
 ```sh
 npm i -D @hypernym/prettier-config
@@ -22,29 +20,26 @@ npm i -D @hypernym/prettier-config
 }
 ```
 
+```js
+// prettier.config.js
+
+export { default } from '@hypernym/prettier-config'
+```
+
 ### Custom
 
 ```js
-// prettier.config.cjs
+// prettier.config.js
 
-module.exports = {
-  ...require('@hypernym/prettier-config')
+import base from '@hypernym/prettier-config'
 
-  // custom options...
+const config = {
+  ...base,
+  singleQuote: false,
+  // ...
 }
-```
 
-### Types
-
-```js
-// prettier.config.cjs
-
-/** @type {import('@hypernym/prettier-config').Config} */
-module.exports = {
-  ...require('@hypernym/prettier-config')
-
-  // custom options...
-}
+export default config
 ```
 
 ## Community
