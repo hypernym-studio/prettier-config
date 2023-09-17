@@ -1,7 +1,8 @@
-/** @type {import('./index').Config} */
-module.exports = {
-  arrowParens: 'avoid',
+/** @type {import('prettier').Config} */
+const config = {
   semi: false,
+  tabWidth: 2,
   singleQuote: true,
-  trailingComma: 'none'
 }
+
+export { config as default }
