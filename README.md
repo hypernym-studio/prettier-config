@@ -8,6 +8,19 @@ Hypernym's internal config for Prettier.
 npm i -D @hypernym/prettier-config
 ```
 
+## Setup
+
+Optionally, add a `format` command for manual formatting:
+
+```js
+// package.json
+{
+  "scripts": {
+    "format": "prettier --write .",
+  }
+}
+```
+
 ## Usage
 
 ### Simple
