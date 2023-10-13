@@ -25,7 +25,7 @@
     "esm"
   ],
   "scripts": {
-    "build": "rolli",
+    "build": "hyperbundler",
     "format": "prettier --config src/index.js --write .",
     "prepublishOnly": "npm run build"
   },
@@ -33,8 +33,8 @@
     "prettier": ">=3.0.0"
   },
   "devDependencies": {
-    "prettier": "^3.0.3",
-    "rolli": "^0.7.0"
+    "@hypernym/bundler": "^0.1.2",
+    "prettier": "^3.0.3"
   },
   "engines": {
     "node": ">=v18.0.0"
