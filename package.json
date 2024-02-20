@@ -33,8 +33,8 @@
     "prettier": ">=3.0.0"
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.6.1",
-    "prettier": "^3.1.0"
+    "@hypernym/bundler": "^0.8.0",
+    "prettier": "^3.2.5"
   },
   "engines": {
     "node": ">=v18.0.0"
