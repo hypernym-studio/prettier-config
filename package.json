@@ -1,6 +1,6 @@
 {
   "name": "@hypernym/prettier-config",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for Prettier.",
   "license": "MIT",
@@ -29,14 +29,15 @@
     "format": "prettier --config src/index.js --write .",
     "prepublishOnly": "npm run build"
   },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "peerDependencies": {
     "prettier": ">=3.0.0"
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.8.0",
+    "@hypernym/bundler": "^0.8.1",
     "prettier": "^3.2.5"
-  },
-  "engines": {
-    "node": ">=v18.0.0"
   }
 }
