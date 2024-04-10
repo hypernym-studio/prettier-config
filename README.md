@@ -10,10 +10,11 @@ npm i -D @hypernym/prettier-config
 
 ## Setup
 
-Optionally, add a `format` command for manual formatting:
+Add a `format` command for manual formatting (optionally):
 
 ```js
 // package.json
+
 {
   "scripts": {
     "format": "prettier --write .",
