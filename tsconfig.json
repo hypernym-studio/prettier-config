@@ -1,4 +1,4 @@
 {
   "extends": "@hypernym/tsconfig",
-  "include": ["src/**/*", "bundler.config.js"]
+  "include": ["src/**/*", "bundler.config.ts"]
 }
