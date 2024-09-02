@@ -12,6 +12,10 @@
     ".": {
       "types": "./dist/types/index.d.ts",
       "import": "./dist/index.mjs"
+    },
+    "./svelte": {
+      "types": "./dist/types/svelte/index.d.ts",
+      "import": "./dist/svelte/index.mjs"
     }
   },
   "files": [
@@ -27,18 +31,27 @@
   "scripts": {
     "build": "hyperbundler",
     "format": "prettier --config src/index.js --write .",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build"
   },
   "sideEffects": false,
+  "packageManager": "pnpm@9.9.0",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
   },
   "peerDependencies": {
-    "prettier": ">=3.0.0"
+    "prettier": ">=3.0.0",
+    "prettier-plugin-svelte": ">=3.2.3"
+  },
+  "peerDependenciesMeta": {
+    "prettier-plugin-svelte": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@hypernym/bundler": "^0.9.3",
-    "@hypernym/tsconfig": "^2.0.0",
-    "prettier": "^3.3.3"
+    "@hypernym/tsconfig": "^2.1.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-svelte": "^3.2.6"
   }
 }

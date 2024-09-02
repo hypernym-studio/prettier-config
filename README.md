@@ -5,7 +5,7 @@ Hypernym's internal config for Prettier.
 <sub><a href="https://github.com/hypernym-studio/prettier-config">Repository</a> | <a href="https://www.npmjs.com/package/@hypernym/prettier-config">Package</a> | <a href="https://github.com/hypernym-studio/prettier-config/releases">Releases</a> | <a href="https://github.com/hypernym-studio/prettier-config/discussions">Discussions</a></sub>
 
 ```sh
-npm i -D @hypernym/prettier-config
+pnpm add -D @hypernym/prettier-config
 ```
 
 ## Setup
@@ -40,6 +40,30 @@ Add a `format` command for manual formatting (optionally):
 export { default } from '@hypernym/prettier-config'
 ```
 
+### Svelte/SvelteKit
+
+> [!NOTE]
+>
+> Install the required `Svelte` dev dependencies before using:
+>
+> ```sh
+> pnpm add -D prettier-plugin-svelte
+> ```
+
+```js
+// package.json
+
+{
+  "prettier": "@hypernym/prettier-config/svelte"
+}
+```
+
+```js
+// prettier.config.js
+
+export { default } from '@hypernym/prettier-config/svelte'
+```
+
 ### Custom
 
 ```js
@@ -64,8 +88,6 @@ Use the official [discussions](https://github.com/hypernym-studio/prettier-confi
 
 ## License
 
-Developed in 🇭🇷 Croatia.
+Developed in 🇭🇷 Croatia, © Hypernym Studio.
 
 Released under the [MIT](LICENSE.txt) license.
-
-© Hypernym Studio
