@@ -10,11 +10,11 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
+      "types": "./dist/types/index.d.mts",
       "import": "./dist/index.mjs"
     },
     "./svelte": {
-      "types": "./dist/types/svelte/index.d.ts",
+      "types": "./dist/types/svelte/index.d.mts",
       "import": "./dist/svelte/index.mjs"
     }
   },
@@ -34,7 +34,7 @@
     "prepublishOnly": "pnpm build"
   },
   "sideEffects": false,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@9.12.3",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
@@ -49,9 +49,9 @@
     }
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.9.3",
-    "@hypernym/tsconfig": "^2.1.0",
+    "@hypernym/bundler": "^0.14.0",
+    "@hypernym/tsconfig": "^2.4.0",
     "prettier": "^3.3.3",
-    "prettier-plugin-svelte": "^3.2.6"
+    "prettier-plugin-svelte": "^3.2.7"
   }
 }
