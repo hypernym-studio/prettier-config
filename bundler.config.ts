@@ -1,25 +1,16 @@
-import { defineConfig } from '@hypernym/bundler'
-
-function replacePath(
-  path: RegExp | string,
-  replace: string,
-): (id: string) => string {
-  return (id) => {
-    if (id.match(path)) return replace
-    return id
-  }
-}
+import { defineConfig, resolvePaths } from '@hypernym/bundler'
 
 export default defineConfig({
   entries: [
-    { input: './src/index.js', output: './dist/index.mjs' },
-    { types: './src/types/index.ts' },
+    { input: './src/index.js' },
+    { dts: './src/types/index.ts' },
     {
       input: './src/svelte/index.js',
-      output: './dist/svelte/index.mjs',
       externals: ['../index.js'],
-      paths: (id) => replacePath('../index.js', '../index.mjs')(id),
+      paths: resolvePaths([
+        { find: '../index.js', replacement: '../index.mjs' },
+      ]),
     },
-    { types: './src/types/svelte/index.ts' },
+    { dts: './src/types/svelte/index.ts' },
   ],
 })
