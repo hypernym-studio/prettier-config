@@ -1,12 +1,22 @@
-# @hypernym/prettier-config
+<h1 align="center">Hypernym Prettier Config</h1>
 
-Hypernym's internal config for Prettier.
+<p align="center">Hypernym's internal config for Prettier.</p>
 
-<sub><a href="https://github.com/hypernym-studio/prettier-config">Repository</a> | <a href="https://www.npmjs.com/package/@hypernym/prettier-config">Package</a> | <a href="https://github.com/hypernym-studio/prettier-config/releases">Releases</a> | <a href="https://github.com/hypernym-studio/prettier-config/discussions">Discussions</a></sub>
+<p align="center">
+  <a href="https://github.com/hypernym-studio/prettier-config">Repository</a>
+  <span>✦</span>
+  <a href="https://www.npmjs.com/package/@hypernym/prettier-config">Package</a>
+  <span>✦</span>
+  <a href="https://github.com/hypernym-studio/prettier-config/releases">Releases</a>
+  <span>✦</span>
+  <a href="https://github.com/hypernym-studio/prettier-config/discussions">Discussions</a>
+</p>
 
-```sh
-pnpm add -D @hypernym/prettier-config
-```
+<br>
+
+<pre align="center">pnpm add -D @hypernym/prettier-config</pre>
+
+<br>
 
 ## Setup
 
