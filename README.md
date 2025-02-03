@@ -1,4 +1,4 @@
-<h1 align="center">Hypernym Prettier Config</h1>
+<h1 align="center">Prettier Config</h1>
 
 <p align="center">Hypernym's internal config for Prettier.</p>
 
