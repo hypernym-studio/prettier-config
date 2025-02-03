@@ -12,14 +12,14 @@ importers:
         specifier: ^0.14.0
         version: 0.14.0(typescript@5.5.4)
       '@hypernym/tsconfig':
-        specifier: ^2.4.0
-        version: 2.4.0(typescript@5.5.4)
+        specifier: ^2.5.0
+        version: 2.5.0(typescript@5.5.4)
       prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
+        specifier: ^3.4.2
+        version: 3.4.2
       prettier-plugin-svelte:
-        specifier: ^3.2.7
-        version: 3.2.7(prettier@3.3.3)(svelte@4.2.19)
+        specifier: ^3.3.3
+        version: 3.3.3(prettier@3.4.2)(svelte@4.2.19)
 
 packages:
 
@@ -204,8 +204,8 @@ packages:
     resolution: {integrity: sha512-mKZ/XSmsnbrLYH3R6FOs4Gv02Mob1DNG/DcigxkblHTplq6fss+nh7FZnefVAmv46963Q6jn8agjCJkGgFcQ+w==}
     engines: {node: '>=v18.0.0'}
 
-  '@hypernym/tsconfig@2.4.0':
-    resolution: {integrity: sha512-Mjs3eNF//55zeMzL8in9HJfKa12kq9kEjNLQdvMqF8XemPRjhYWIwLeGkWEUYWxY03gqXcrWrkinXanTH9Q+mw==}
+  '@hypernym/tsconfig@2.5.0':
+    resolution: {integrity: sha512-EgAVFhKiOOu9pGoXWEfoR75LSpCdnoXQqZddCX+/Q3tgDjrXMHb1s/z6jydiPKxyeeI/hsfbKqw5AOqKXgvQoA==}
     engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
     peerDependencies:
       '@types/node': '>=20.0.0'
@@ -495,14 +495,14 @@ packages:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
 
-  prettier-plugin-svelte@3.2.7:
-    resolution: {integrity: sha512-/Dswx/ea0lV34If1eDcG3nulQ63YNr5KPDfMsjbdtpSWOxKKJ7nAc2qlVuYwEvCr4raIuredNoR7K4JCkmTGaQ==}
+  prettier-plugin-svelte@3.3.3:
+    resolution: {integrity: sha512-yViK9zqQ+H2qZD1w/bH7W8i+bVfKrD8GIFjkFe4Thl6kCT9SlAsXVNmt3jCvQOCsnOhcvYgsoVlRV/Eu6x5nNw==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0 || ^5.0.0-next.0
 
-  prettier@3.3.3:
-    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -659,7 +659,7 @@ snapshots:
 
   '@hypernym/colors@1.0.1': {}
 
-  '@hypernym/tsconfig@2.4.0(typescript@5.5.4)':
+  '@hypernym/tsconfig@2.5.0(typescript@5.5.4)':
     dependencies:
       typescript: 5.5.4
 
@@ -802,7 +802,7 @@ snapshots:
   code-red@1.0.4:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       acorn: 8.12.1
       estree-walker: 3.0.3
       periscopic: 3.1.0
@@ -858,7 +858,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   fsevents@2.3.3:
     optional: true
@@ -880,7 +880,7 @@ snapshots:
 
   is-reference@3.0.2:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
 
   js-tokens@4.0.0:
     optional: true
@@ -897,7 +897,7 @@ snapshots:
 
   periscopic@3.1.0:
     dependencies:
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       estree-walker: 3.0.3
       is-reference: 3.0.2
 
@@ -906,12 +906,12 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  prettier-plugin-svelte@3.2.7(prettier@3.3.3)(svelte@4.2.19):
+  prettier-plugin-svelte@3.3.3(prettier@3.4.2)(svelte@4.2.19):
     dependencies:
-      prettier: 3.3.3
+      prettier: 3.4.2
       svelte: 4.2.19
 
-  prettier@3.3.3: {}
+  prettier@3.4.2: {}
 
   resolve@1.22.8:
     dependencies:
@@ -965,7 +965,7 @@ snapshots:
       '@ampproject/remapping': 2.3.0
       '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
-      '@types/estree': 1.0.5
+      '@types/estree': 1.0.6
       acorn: 8.12.1
       aria-query: 5.3.0
       axobject-query: 4.1.0
