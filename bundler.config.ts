@@ -3,7 +3,7 @@ import { defineConfig, resolvePaths } from '@hypernym/bundler'
 export default defineConfig({
   entries: [
     { input: './src/index.js' },
-    { dts: './src/types/index.ts' },
+    { dts: './src/types/index.ts', output: './dist/index.d.mts' },
     {
       input: './src/svelte/index.js',
       externals: ['../index.js'],
@@ -11,6 +11,6 @@ export default defineConfig({
         { find: '../index.js', replacement: '../index.mjs' },
       ]),
     },
-    { dts: './src/types/svelte/index.ts' },
+    { dts: './src/types/svelte/index.ts', output: './dist/svelte/index.d.mts' },
   ],
 })
