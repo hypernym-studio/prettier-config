@@ -4,7 +4,10 @@
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for Prettier.",
   "license": "MIT",
-  "repository": "hypernym-studio/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypernym-studio/prettier-config.git"
+  },
   "homepage": "https://github.com/hypernym-studio/prettier-config",
   "funding": "https://github.com/sponsors/ivodolenc",
   "type": "module",
@@ -33,11 +36,6 @@
     "format": "prettier --config src/index.js --write .",
     "prepublishOnly": "pnpm build"
   },
-  "packageManager": "pnpm@10.5.0",
-  "engines": {
-    "node": ">=20.0.0",
-    "pnpm": ">=9.0.0"
-  },
   "peerDependencies": {
     "prettier": ">=3.0.0",
     "prettier-plugin-svelte": ">=3.2.3"
@@ -49,8 +47,8 @@
   },
   "devDependencies": {
     "@hypernym/bundler": "^0.14.3",
-    "@hypernym/tsconfig": "^2.6.0",
-    "prettier": "^3.5.2",
+    "@hypernym/tsconfig": "^2.6.1",
+    "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.3.3"
   }
 }
