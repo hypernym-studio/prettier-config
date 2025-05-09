@@ -1,9 +1,9 @@
+import { fileURLToPath } from 'node:url'
 import defaultConfig from '../index.js'
 
-/** @type { import("prettier").Config } */
 const config = {
   ...defaultConfig,
-  plugins: ['prettier-plugin-svelte'],
+  plugins: [fileURLToPath(import.meta.resolve('prettier-plugin-svelte'))],
   overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
 }
 
