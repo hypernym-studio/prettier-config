@@ -1,4 +1,4 @@
-<h1 align="center">Prettier Config</h1>
+<h1 align="center">@hypernym/prettier-config</h1>
 
 <p align="center">Hypernym's internal config for Prettier.</p>
 
@@ -18,31 +18,23 @@
 
 <br>
 
-## Setup
+## Usage
 
-Add a `format` command for manual formatting (optionally):
+### Formatting Commands
+
+Add a `format` command for manual formatting (optional):
 
 ```js
 // package.json
 
 {
   "scripts": {
-    "format": "prettier --write .",
+    "format": "prettier --write ."
   }
 }
 ```
 
-## Usage
-
-### Simple
-
-```js
-// package.json
-
-{
-  "prettier": "@hypernym/prettier-config"
-}
-```
+### Default Config
 
 ```js
 // prettier.config.js
@@ -61,26 +53,19 @@ export { default } from '@hypernym/prettier-config'
 > ```
 
 ```js
-// package.json
-
-{
-  "prettier": "@hypernym/prettier-config/svelte"
-}
-```
-
-```js
 // prettier.config.js
 
 export { default } from '@hypernym/prettier-config/svelte'
 ```
 
-### Custom
+## Custom Setup
 
 ```js
 // prettier.config.js
 
 import base from '@hypernym/prettier-config'
 
+/** @type {import("prettier").Config} */
 const config = {
   ...base,
   singleQuote: false,
