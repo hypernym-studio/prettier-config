@@ -1,5 +1,5 @@
 import { fileURLToPath } from 'node:url'
-import defaultConfig from '../index.js'
+import defaultConfig from '../index.mjs'
 
 const config = {
   ...defaultConfig,
