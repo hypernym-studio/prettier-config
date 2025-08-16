@@ -75,12 +75,6 @@ const config = {
 export default config
 ```
 
-## Community
-
-Feel free to ask questions or share new ideas.
-
-Use the official [discussions](https://github.com/hypernym-studio/prettier-config/discussions) to get involved.
-
 ## License
 
 Developed in 🇭🇷 Croatia, © Hypernym Studio.
