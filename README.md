@@ -37,7 +37,7 @@ Add a `format` command for manual formatting (optional):
 ### Default Config
 
 ```js
-// prettier.config.mjs
+// prettier.config.js
 
 export { default } from '@hypernym/prettier-config'
 ```
@@ -53,7 +53,7 @@ export { default } from '@hypernym/prettier-config'
 > ```
 
 ```js
-// prettier.config.mjs
+// prettier.config.js
 
 export { default } from '@hypernym/prettier-config/svelte'
 ```
@@ -61,7 +61,7 @@ export { default } from '@hypernym/prettier-config/svelte'
 ## Custom Setup
 
 ```js
-// prettier.config.mjs
+// prettier.config.js
 
 import base from '@hypernym/prettier-config'
 
