@@ -1,6 +1,6 @@
 {
   "name": "@hypernym/prettier-config",
-  "version": "3.2.8",
+  "version": "3.2.9",
   "author": "Hypernym Studio",
   "description": "Hypernym's internal config for Prettier.",
   "license": "MIT",
