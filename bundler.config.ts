@@ -1,4 +1,4 @@
-import { defineConfig } from '@hypernym/bundler'
+import { defineConfig, externals } from '@hypernym/bundler'
 
 export default defineConfig({
   entries: [
@@ -6,7 +6,7 @@ export default defineConfig({
     { dts: './src/types.ts', output: './dist/index.d.ts' },
     {
       input: './src/svelte/index.js',
-      externals: ['../index.js'],
+      externals: [...externals, '../index.js'],
     },
     { dts: './src/svelte/types.ts', output: './dist/svelte/index.d.ts' },
   ],
