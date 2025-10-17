@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "build": "hyperbundler",
-    "format": "prettier --config src/index.js --write .",
+    "format": "prettier --config src/index.ts --write .",
     "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@hypernym/bundler": "^0.30.4",
     "@hypernym/tsconfig": "^2.6.2",
+    "@types/node": "^24.8.1",
     "prettier": "^3.6.2",
     "prettier-plugin-svelte": "^3.4.0"
   }
