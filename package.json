@@ -46,10 +46,10 @@
     }
   },
   "devDependencies": {
-    "@hypernym/bundler": "^0.30.4",
-    "@hypernym/tsconfig": "^2.6.2",
-    "@types/node": "^24.8.1",
-    "prettier": "^3.6.2",
+    "@hypernym/bundler": "^0.30.5",
+    "@hypernym/tsconfig": "^2.6.3",
+    "@types/node": "^24.10.1",
+    "prettier": "^3.7.4",
     "prettier-plugin-svelte": "^3.4.0"
   }
 }
